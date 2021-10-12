@@ -7,6 +7,8 @@ function calculadoraSalario(valorSal, cargo){
         case "Desenvolvedor":
             if(valorSal >= 3000){
                 return formulaSalario(valorSal, 20);
+            }else{
+                return formulaSalario(valorSal, 10);
             }
         break;
     }
