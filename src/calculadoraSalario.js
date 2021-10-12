@@ -1,7 +1,11 @@
 function calculadoraSalario(valorSal, cargo){
+    
     function formulaSalario(valorSal, porcentagem){
         return valorSal - ((valorSal * porcentagem) / 100);
     }
+
+    if(valorSal <= 0)
+        throw "Salário inválido";
 
     switch(cargo){
         case "Desenvolvedor":
@@ -34,6 +38,10 @@ function calculadoraSalario(valorSal, cargo){
             }else{
                 return formulaSalario(valorSal, 20);
             }
+        break;
+
+        default:
+            throw "Cargo inválido";
         break;
     }
 }

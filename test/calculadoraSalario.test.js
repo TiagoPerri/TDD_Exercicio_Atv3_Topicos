@@ -41,4 +41,20 @@ describe("Calculadora de salário", () =>{
         expect(res).toBe(2000);
     });
 
+    test("Cargo: Gerente / Salário: 6650", () =>{
+        let res = calculadoraSalario(6650, "Gerente");
+        expect(res).toBe(4655);
+    });
+
+    test("Cargo inválido - testando exceção", () =>{
+        expect( () => { 
+            calculadoraSalario(2500, "Designer")
+        }).toThrow("Cargo inválido");
+    });
+
+    test("Salário inválido - testando exceção", () =>{
+        expect( () => {
+            calculadoraSalario(0, "Gerente")
+        }).toThrow("Salário inválido");
+    });
 });
