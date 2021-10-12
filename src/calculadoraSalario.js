@@ -27,6 +27,14 @@ function calculadoraSalario(valorSal, cargo){
                 return formulaSalario(valorSal, 15);
             }
         break;
+
+        case "Gerente":
+            if(valorSal >= 5000){
+                return formulaSalario(valorSal, 30);
+            }else{
+                return formulaSalario(valorSal, 20);
+            }
+        break;
     }
 }
 
