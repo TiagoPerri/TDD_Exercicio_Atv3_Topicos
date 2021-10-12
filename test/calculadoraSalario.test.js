@@ -15,4 +15,9 @@ describe("Calculadora de salário", () =>{
         let res = calculadoraSalario(1000, "Desenvolvedor");
         expect(res).toBe(900);
     });
+
+    test("Cargo: DBA / Salário: 2750", () =>{
+        let res = calculadoraSalario(2750, "DBA");
+        expect(res).toBe(2062.5);
+    });
 });
