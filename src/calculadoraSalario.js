@@ -11,6 +11,12 @@ function calculadoraSalario(valorSal, cargo){
                 return formulaSalario(valorSal, 10);
             }
         break;
+
+        case "DBA":
+            if(valorSal >= 2000){
+                return formulaSalario(valorSal, 25);
+            }
+        break;
     }
 }
 
