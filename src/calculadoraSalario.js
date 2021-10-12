@@ -19,6 +19,12 @@ function calculadoraSalario(valorSal, cargo){
                 return formulaSalario(valorSal, 15);
             }
         break;
+
+        case "Testador":
+            if(valorSal >= 2000){
+                return formulaSalario(valorSal, 25);
+            }
+        break;
     }
 }
 
