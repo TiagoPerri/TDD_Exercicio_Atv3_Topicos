@@ -26,4 +26,9 @@ describe("Calculadora de salário", () =>{
         expect(res).toBe(510);
     });
 
+    test("Cargo: Testador / Salário: 2200", () =>{
+        let res = calculadoraSalario(2200, "Testador");
+        expect(res).toBe(1650);
+    });
+
 });
